@@ -13,11 +13,11 @@
     </head>
 
     <body>
-        <header>
+        <header id="main-header">
             <h1>Jez' Pizza House</h1>
-            <center><img src="pizza.jpg" /></center>
+            <div class="main-pic" style="background:url(pizza.jpg)"></div>
             <h3>Best Pizza in the County!</h2>
-            <h3>You hungry? We got you bro</h3>
+            <h3>You hungry? We got you covered</h3>
         </header>
         <main>
             
@@ -28,7 +28,7 @@
             </section>
 
             <section>
-                <h3>Pizza Menu</h3>
+                <div class= "Sub-title"><h2>Pizza Menu</h2></div>
                 <table width = "100%" border="1px">
                     <thead>
                         <tr>
@@ -61,14 +61,16 @@
             </section>
 
             <section id= "Contact Form">
-                <h2>Place Order Here:</h2>
+                <div class="Sub-title"><h2>Place Order Here:</h2></div>
                 <form method="GET" action="place-order.php">
-                    <h4>Delivery or Collection</h4>
+                <section id="set-pizza">
+                <article>
+                    <div class="sub-sub"><h4>Delivery or Collection</h4></div>
                     <input name="deliveryMethod" type="radio" value="Delivery" /> Delivery <br />
                     <input name="deliveryMethod" type="radio" value="Pickup" /> PickUp <br />
-
-
-                    <h4>Address</h4>
+                </article>
+                <article>
+                    <div class="sub-sub"><h4>Address</h4></div>
                     <input name="address1" placeholder="Address Line 1" class="lg-input" /><br />
                     <input name="address1" placeholder="Address Line 2" class="lg-input" /><br />
 
@@ -78,32 +80,37 @@
                     <input name="country" placeholder="Country" class="sm-input" /><br />
                     <input name="number" placeholder="Mobile Number" class="sm-input" /><br />
                     <br />
-
-                    <h4>Size</h4>
+                </article>
+                <article>
+                    <div class="sub-sub"><h4>Size</h4></div>
                     <select name="size">
                         <option value="12">12" - £13.99</option>
                         <option value="16">16" - £16.99</option>
                         <option value="18">18" - £19.99</option>
                         <option value="74">74" - £149.99</option>
                     </select>
+                </article>
 
-                    <h3>Pick a Type</h3>
+                <article>
+                    <div class="sub-sub"><h4>Pick a Type</h4></div>
                     <input name="pizzaType" type="radio" value="Pepperoni" /> Pepperoni <br />
                     <input name="pizzaType" type="radio" value="Hawaiian" /> Hawaiian <br />
                     <input name="pizzaType" type="radio" value="Meat Lovers" /> Meat Lovers <br />
                     <input name="pizzaType" type="radio" value="Texas BBQ" /> Texas BBQ <br />
+                </article>
+                </section>
 
-
+                <section id="own-pizza">
                     <h3>Or Create your Own</h3>
-
-                    <h4>Ingredients</h4>
+                
+                    <div class="sub-sub"><h4>Ingredients</h4></div>
                     <input name="ingredient" type="checkbox" value="pepperoni" /> Pepperoni <br />
                     <input name="ingredient" type="checkbox" value="salami" /> Salami <br />
                     <input name="ingredient" type="checkbox" value="Sausage" /> Italian Sausage<br />
                     <input name="ingredient" type="checkbox" value="bacon" /> Bacon <br />
                     <input name="ingredient" type="checkbox" value="onions" /> Onions <br />
                     <input name="ingredient" type="checkbox" value="pepper" /> Green Peppers <br /><br />
-
+                </section>
                 </form>
                 <button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ';">Place Order</button>
             </section>
@@ -112,9 +119,8 @@
 
         <br /><br />
         <footer>
-            <center>&copy;Copyright 2019 <br />
+            &copy;Copyright 2019 <br />
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Terms and Conditions</a>
-            </center>
         </footer>
     </body>
 

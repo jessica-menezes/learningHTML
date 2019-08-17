@@ -1,23 +1,71 @@
 @import url('https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Caslon+Display&display=swap');
 
 
 
-body > header > h1 {
-    font-family: "Beth Ellen", sans-serif;
-    font-weight: 300;
+#main-header {
+    font-family: "Libre Caslon Display", sans-serif;
     color: rgb(10, 12, 12);
     border-bottom: 4px solid #000;
     background: rgb(255, 255, 255);
-}
+    margin:0px 600px;
+} 
 
-body > main > section> h2 {
-    color: rgb(10, 12, 12);
-    background: rgb(255, 255, 255);
+table {
+    margin:auto;
+    width:100%;
+    
 }
-
+body > header > h1{
+    font-family: "Beth Ellen", sans-serif;
+    margin:0px 100px;
+    display:inline-block;
+}
 body {
 
     background: #cf3e3e;
     color: rgb(247, 243, 243);
-    margin:0px;
+}
+
+.main-pic{
+    height: 400px;
+    width:100%;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.Sub-title{
+    color: rgb(10, 12, 12);
+    background: rgb(255, 255, 255);
+}
+
+#set-pizza{
+    width:  1000px;
+    margin: auto;
+    border: 10px solid rgb(253, 252, 252);
+    box-shadow: 5px 5px 10px -1px rgba(0,0,0,.2);
+}
+
+article{
+    display: inline-block;
+    padding: 10px;
+    max-width: 100%;
+    margin: 20px;
+    
+}
+.sub-sub{
+    text-decoration: underline;
+}
+
+#own-pizza{
+    text-align: center;
+    border: 10px solid rgb(253, 252, 252);
+    padding: 10px;
+    max-width: 100%;
+    margin: 20px;
+    box-shadow: 5px 5px 10px -1px rgba(0,0,0,.2);
+}
+
+footer{
+    text-align: center;
 }
