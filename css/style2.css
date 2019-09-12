@@ -70,6 +70,10 @@ a:hover, a.more-link.bolded-link:hover{
     text-decoration-color: aqua;
 }
 
+#text-Button{
+    text-align: center;
+}
+
 p {
     letter-spacing: 2px; 
     word-spacing: 2px;
@@ -80,14 +84,14 @@ footer{
     text-align: center;
 }
 
-.my-input{
+.my-input, .my-textarea{
     display:block;
     width: 90%;
     margin:10px;
     padding:10px 20px; /*verical horizontal*/
     border-radius: 10px 20px; /*topleft topright bottomright bottomLeft*/
     border: 1px solid palevioletred;
-
+    resize: none;
 }
 
 .my-input:focus{

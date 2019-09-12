@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+body{
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+#main-header{
+    border-bottom: 2px solid;
+}
+
+#site-title {
+    font-family: "Permanent Marker", sans-serif;
+    display: inline-block;
+}
+
+.profile-menu{
+    list-style: none;
+    float: right;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+[data-trigger = "dropdown"]{
+    padding-bottom:35px;
+}
+
+.submenu{
+    border: 1px solid #aaa;
+    background: white;
+    margin-top: 20px;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.4);
+    list-style: none;
+    width:300px;
+    padding: 0px;
+    position: absolute;
+    right:10px;
+    display: none;
+}
+
+.submenu.active{
+    display:block;
+}
+
+.submenu a{
+    text-decoration: none;
+    padding: 10px 10px;
+    display: block;
+    color: #333;
+    text-shadow: none;
+    font-weight: 500;
+    
+}
+
+.submenu a:hover{
+    background: #eee;
+}
+
+section{
+    max-width: 100%;
+    width:900px;
+    margin:auto;
+}
+
+#context{
+    display: inline-block;
+    position: absolute;
+    background: #fff;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.context-menu{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.context-menu a{
+    display: block;
+    width: 200px;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    text-shadow: none;
+    font-weight: 500;
+}
+
+.context-menu a:hover{
+    background: #aaa;
+}
+
+.context-menu a.hidden{
+    display:none;
+
+}
+
+.context-menu a.hidden.shown{
+    display:block;
+
+}
